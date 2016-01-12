@@ -5,6 +5,9 @@ cd ../..
 project_root=`pwd`
 
 
+# child project path
+project_path_connector_tcp=connector/tcp
+
 # env
 export GOPATH=$project_root:$GOPATH
 
@@ -17,8 +20,8 @@ cd $project_root/bin
 rm -rf ./*
 
 # build
-cd $project_root/src/$project_name
+cd $project_root/src/$project_name/$project_path_connector_tcp
 go install
 
 # copy
-cp $project_root/src/$project_name/config/* $project_root/bin/
+cp $project_root/src/$project_name/$project_path_connector_tcp/config/* $project_root/bin/
