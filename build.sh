@@ -2,7 +2,7 @@
 project_name=linbox_go
 
 cd ../..
-project_root=`pwd`:$GOPATH
+project_root=`pwd`
 
 
 # child project path
