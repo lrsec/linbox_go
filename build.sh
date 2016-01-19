@@ -24,4 +24,4 @@ cd $project_root/src/$project_name/$project_path_connector_tcp
 go install
 
 # copy
-cp $project_root/src/$project_name/$project_path_connector_tcp/config/* $project_root/bin/
+cp -r $project_root/src/$project_name/$project_path_connector_tcp/resources/* $project_root/bin/
